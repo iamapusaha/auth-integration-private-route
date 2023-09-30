@@ -11,6 +11,7 @@ import Login from './components/LogIn/Login.jsx';
 import Register from './components/Register/Register.jsx';
 import AuthProvider from './providers/AuthProvider';
 
+
 const router = createBrowserRouter([
   {
     path: "/",

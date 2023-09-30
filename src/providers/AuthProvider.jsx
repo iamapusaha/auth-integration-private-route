@@ -1,16 +1,13 @@
-import { createContext } from "react";
 
 import PropTypes from 'prop-types';
-export const AuthContext = createContext(null)
+import { createContext } from 'react';
+export const AuthContext = createContext(null);
 const AuthProvider = ({ children }) => {
-
-    const authInfo = { name: 'chol bari jai' }
-
+    const authInfo = { name: 'go to hat okay!' }
     return (
-        < AuthContext.Provider value={authInfo} >
+        <AuthContext.Provider value={authInfo}>
             {children}
-        </AuthContext.Provider >
-
+        </AuthContext.Provider>
     );
 };
 
