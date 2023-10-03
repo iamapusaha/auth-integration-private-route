@@ -13,7 +13,12 @@ const AuthProvider = ({ children }) => {
         return signInWithEmailAndPassword(auth, email, password)
     }
     const authinfo = { user, createUser, signInUser }
-
+    useEffect(() => {
+        onAuthStateChanged(auth, currentUser => {
+            setUser(currentUser);
+            console.log(' from useEffect', currentUser);
+        })
+    }, [])
     return (
         <AuthContext.Provider value={authinfo}>
             {children}
