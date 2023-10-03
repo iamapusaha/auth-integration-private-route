@@ -1,10 +1,12 @@
+
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 
+
 const Register = () => {
     const { createUser } = useContext(AuthContext)
-
+    console.log(createUser);
     const handleRegister = e => {
         e.preventDefault()
         const name = e.target.name.value;
@@ -17,7 +19,7 @@ const Register = () => {
                 console.log(user);
             })
             .catch(error => {
-                console.error(error);
+                console.error(error)
             })
     }
     return (
@@ -49,7 +51,7 @@ const Register = () => {
                                 <input type="password" name="password" placeholder="password" className="input input-bordered" />
                                 <label>
                                     <input type="checkbox" name="" id="" /> I agree to the
-                                    <a href="#" className="label-text-alt link link-hover"> Terms and Conditions</a>
+                                    <button href="#" className="label-text-alt link link-hover"> Terms and Conditions</button>
                                 </label>
                             </div>
                             <div className="form-control mt-6">

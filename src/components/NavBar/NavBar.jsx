@@ -18,7 +18,7 @@ const NavBar = () => {
                         {navItem}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl"><Link to='/'>AIPR</Link></a>
+                <button className="btn btn-ghost normal-case text-xl"><Link to='/'>AIPR</Link></button>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -26,7 +26,7 @@ const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Unknown</a>
+                <button className="btn">Unknown</button>
             </div>
         </div>
     );
