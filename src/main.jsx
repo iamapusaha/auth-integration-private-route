@@ -11,6 +11,7 @@ import Login from './components/LogIn/Login.jsx';
 import Register from './components/Register/Register.jsx';
 import AuthProvider from './providers/AuthProvider';
 import Orders from './components/Orders/Orders';
+import PrivateRoute from './components/Routes/PrivateRoute';
 
 
 
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/orders',
-        element: <Orders></Orders>
+        element: <PrivateRoute><Orders></Orders></PrivateRoute>
       }
     ]
   },
