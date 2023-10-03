@@ -18,6 +18,7 @@ const NavBar = () => {
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/login'>LogIn</NavLink></li>
         <li><NavLink to='/register'>Registration</NavLink></li>
+        <li><NavLink to='/orders'>Orders</NavLink></li>
     </>
     return (
         <div className="container mx-auto navbar bg-base-100">
